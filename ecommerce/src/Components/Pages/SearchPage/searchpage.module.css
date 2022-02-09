@@ -1,0 +1,20 @@
+.stickyFooter {
+    bottom: 0 !important;
+}
+
+.noarticles {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+#selectBlock {
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+
+.selectPrice {
+    width: 6%;
+    margin-top: 3.5%;
+}

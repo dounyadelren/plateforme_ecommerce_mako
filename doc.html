@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doc.css">
+    <title>API Doc</title>
+</head>
+
+<body>
+    <h1>DOC API ECOMMERCE</h1>
+    <div class="boxRequest">
+        <p><b>/users</b> Récupère tous les utilisateurs</p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/users</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Response: {
+        users: [
+            {
+                email: email_user,
+                firstName: firstName_user,
+                lastName: lastName_user,
+                company: company_user,
+                adress: adress_user,
+                postalCode: postalCode_user,
+                city: city_user,
+                country: country_user,
+                plantedTrees: [plantedTree_id, plantedTree_id, ...],
+                phone: phone_user
+            },
+            ...
+        ]
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/users?email={email}</b> Récupère l'utilisateur correspondant à l'email {email}</p>
+        <p><i>Paramètres nécessaires : email;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/users?email=email@test.fr</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Response: {
+        user: {
+            email: 'email@test.fr',
+            firstName: firstName_user,
+            lastName: lastName_user,
+            company: company_user,
+            adress: adress_user,
+            postalCode: postalCode_user,
+            city: city_user,
+            country: country_user,
+            plantedTrees: [plantedTree_id, plantedTree_id, ...],
+            phone: phone_user
+        }
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/users/connect</b> Récupère l'utilisateur correspondant à l'email {email}</p>
+        <p><i>Paramètres nécessaires : email; password;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>POST</b> <i>/users/connect</i></p>
+        <p><i>post: formData({email: 'email@test.fr', password: 'password'})</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Response: {
+        user: {
+            email: 'email@test.fr',
+            firstName: firstName_user,
+            lastName: lastName_user,
+            company: company_user,
+            adress: adress_user,
+            postalCode: postalCode_user,
+            city: city_user,
+            country: country_user,
+            plantedTrees: [plantedTree_id, plantedTree_id, ...],
+            phone: phone_user
+        }
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/users/register</b> Inscrit l'utilisateur correspondant à l'email {email}</p>
+        <p><i>Paramètres nécessaires : email; password; role;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>POST</b> <i>/users/register</i></p>
+        <p><i>post: formData({email: 'email@test.fr', password: 'password', role: 'user'})</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK'
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/users/update</b> Modifie les informations de l'utilisateur correspondant à l'email {email}</p>
+        <p><i>Paramètres nécessaires : email;</i></p>
+        <p><i>Paramètres optionnels : prenom; nom; company; adresse; codePostal; ville; pays; tel;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>POST</b> <i>/users/update</i></p>
+        <p><i>post: formData({email: 'email@test.fr', prenom: 'Hello', nom: 'World'})</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Response: {
+        user: {
+            email: 'email@test.fr',
+            firstName: 'Hello',
+            lastName: 'World',
+            company: company_user,
+            adress: adress_user,
+            postalCode: postalCode_user,
+            city: city_user,
+            country: country_user,
+            plantedTrees: [plantedTree_id, plantedTree_id, ...],
+            phone: phone_user
+        }
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/users/password</b> Change le mot de passe de l'utilisateur correspondant à l'email {email}</p>
+        <p><i>Paramètres nécessaires : email; oldPassword; newPassword</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>POST</b> <i>/users/password</i></p>
+        <p><i>post: formData({email: 'email@test.fr', oldPassword: 'oldPassword', newPassword: 'newPassword'})</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK'
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles</b> Récupère tous les articles</p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/articles</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Result: {
+        article: [
+            {
+                id: article_id,
+                user: {
+                    company: company_user,
+                    adress: adress_user,
+                    postalCode: postal_code_user,
+                    city: city_user,
+                    country: country_user,
+                },
+                name: article_name,
+                price: article_price,
+                components: [
+                    compo1,
+                    compo2,
+                    ...
+                ],
+                description: article_description,
+                status: article_status,
+                stock: article_stock,
+                promotion: article_promotion,
+                releaseDate: article_release_date,
+                deliveryPrice: article_delivery_price,
+                tags: [
+                    tag1,
+                    tag2,
+                    ...
+                ],
+                size: [
+                    sizeAvailable1,
+                    sizeAvailable2,
+                    ...
+                ],
+                mainTag: article_main_tag,
+                averageNotes: article_note_moyenne,
+                totalNotes: article_nombre_de_notes,
+                images: image1
+            },
+            ...
+        ],
+        mainTags: [
+            mainTag1,
+            mainTag2,
+            ...
+        ]
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles/{mainTag}</b> Récupère tous les articles du tag {mainTag}</p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/articles/high_tech</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Result: {
+        article: [
+            {
+                id: article_id
+                user: {
+                    company: company_user,
+                    adress: adress_user,
+                    postalCode: postal_code_user,
+                    city: city_user,
+                    country: country_user,
+                },
+                name: article_name,
+                price: article_price,
+                components: [
+                    compo1,
+                    compo2,
+                    ...
+                ],
+                description: article_description,
+                status: article_status,
+                stock: article_stock,
+                promotion: article_promotion,
+                releaseDate: article_release_date,
+                deliveryPrice: article_delivery_price,
+                tags: [
+                    tag1,
+                    tag2,
+                    ...
+                ],
+                size: [
+                    sizeAvailable1,
+                    sizeAvailable2,
+                    ...
+                ],
+                mainTag: high_tech,
+                averageNotes: article_note_moyenne,
+                totalNotes: article_nombre_de_notes,
+                images: image1
+            }
+        ],
+        mainTags: [
+            mainTag1,
+            mainTag2,
+            ...
+        ]
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles?status={status}</b> Récupère tous les articles dont le statut est {status}</p>
+        <p><i>Paramètres nécessaires : status;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/articles?status=VALIDATED</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Result: {
+        article: [
+            {
+                id: article_id
+                user: {
+                    company: company_user,
+                    adress: adress_user,
+                    postalCode: postal_code_user,
+                    city: city_user,
+                    country: country_user,
+                },
+                name: article_name,
+                price: article_price,
+                components: [
+                    compo1,
+                    compo2,
+                    ...
+                ],
+                description: article_description,
+                status: 'VALIDATED',
+                stock: article_stock,
+                promotion: article_promotion,
+                releaseDate: article_release_date,
+                deliveryPrice: article_delivery_price,
+                tags: [
+                    tag1,
+                    tag2,
+                    ...
+                ],
+                size: [
+                    sizeAvailable1,
+                    sizeAvailable2,
+                    ...
+                ],
+                mainTag: high_tech,
+                averageNotes: article_note_moyenne,
+                totalNotes: article_nombre_de_notes,
+                images: image1
+            }
+        ],
+        mainTags: [
+            mainTag1,
+            mainTag2,
+            ...
+        ]
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles?article={article}</b> Récupère l'article avec l'id {article}</p>
+        <p><i>Paramètres nécessaires : article;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/articles?article=1</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Result: {
+        article: {
+            id: 1
+            user: {
+                company: company_user,
+                adress: adress_user,
+                postalCode: postalCode_user,
+                city: city_user,
+                country: country_user,
+            },
+            name: article_name,
+            price: article_price,
+            components: [
+                compo1,
+                compo2,
+                ...
+            ],
+            description: article_description,
+            status: article_status,
+            stock: article_stock,
+            promotion: article_promotion,
+            releaseDate: article_release_date,
+            deliveryPrice: article_delivery_price,
+            tags: [
+                tag1,
+                tag2,
+                ...
+            ],
+            size: [
+                sizeAvailable1,
+                sizeAvailable2,
+                ...
+            ],
+            mainTag: article_mainTag,
+            averageNotes: article_note_moyenne,
+            totalNotes: article_nombre_de_notes,
+            allNotes: {
+                1: totalVotes1,
+                2: totalVotes2,
+                3: totalVotes3,
+                4: totalVotes4,
+                5: totalVotes5
+            },
+            images: [
+                image1,
+                image2,
+                ...
+            ],
+            reviews: [
+                {
+                    review: review_review1,
+                    stars: notation_review1,
+                    email: email_review1
+                },
+                {
+                    review: review_review2,
+                    stars: notation_review2,
+                    email: email_review2
+                },
+                ...
+            ]
+        },
+        mainTags: [
+            mainTag1,
+            mainTag2,
+            ...
+        ]
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles/search</b> Récupère tous les articles qui corresponde à la recherche</p>
+        <p><i>Paramètres optionnels : nom; compagnie; prixMin; prixMax;</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/articles/search?nom=dina</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Result: {
+        article: [
+            {
+                id: article_id
+                user: {
+                    company: company_user,
+                    adress: adress_user,
+                    postalCode: postal_code_user,
+                    city: city_user,
+                    country: country_user,
+                },
+                name: 'ordinateur',
+                price: article_price,
+                components: [
+                    compo1,
+                    compo2,
+                    ...
+                ],
+                description: article_description,
+                status: article_status,
+                stock: article_stock,
+                promotion: article_promotion,
+                releaseDate: article_release_date,
+                deliveryPrice: article_delivery_price,
+                tags: [
+                    tag1,
+                    tag2,
+                    ...
+                ],
+                size: [
+                    sizeAvailable1,
+                    sizeAvailable2,
+                    ...
+                ],
+                mainTag: article_main_tag,
+                averageNotes: article_note_moyenne,
+                totalNotes: article_nombre_de_notes,
+                images: image1
+            }
+        ],
+        mainTags: [
+            mainTag1,
+            mainTag2,
+            ...
+        ]
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles/create</b> Crée un article</p>
+        <p><i>Paramètres nécessaires : emailCreator; productName; price; mainTag; description; components[]; tags[];
+                size; deliveryPrice</i></p>
+        <p><b>Exemple</b></p>
+        <p><b>POST</b> <i>/articles/create</i></p>
+        <p><i>post: formData({emailCreator: 'email@test.fr', productName: 'cards', price: '5.00€', mainTag: 'loisir',
+                description: 'un jeu de cartes', components: ['papier'], tags: ['jeu', 'divertissement'], size: null,
+                deliveryPrice: '0.01€'})</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK',
+    Response: {
+        status: product_status
+    }
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/articles/delete/{article}</b> Supprime l'article avec l'id {article}</p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/articles/delete/1</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK'
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/reviews/create</b> Écrit une review sur l'article avec l'id {article}</p>
+        <p><i>Paramètres nécessaires : article; email; stars; review; </i></p>
+        <p><b>Exemple</b></p>
+        <p><b>POST</b> <i>/reviews/create</i></p>
+        <p><i>post: formData({article: 1, email: 'email@test.fr', stars: 5, review: 'le meilleur pc que j'ai jamais
+                eu})</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK'
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+    <div class="boxRequest">
+        <p><b>/reviews/delete/{id}</b> Supprime une review avec l'id {id}</p>
+        <p><b>Exemple</b></p>
+        <p><b>GET</b> <i>/reviews/delete/1</i></p>
+        <p>Réponse</p>
+        <pre><i>
+{
+    Status: 'OK'
+}
+        </i></pre>
+        <p>Erreur</p>
+        <pre><i>
+{
+    Status: 'KO',
+    Response: {
+        error: error_name
+    }
+}
+        </i></pre>
+    </div>
+</body>
+
+</html>

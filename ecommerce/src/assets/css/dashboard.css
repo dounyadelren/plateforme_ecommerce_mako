@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* PAGES DARSHBOARD */
+
+#rowCreate {
+    margin-top: 4%;
+    text-align: center;
+    margin-right: 0;
+}
+
+#formCreate {
+    width: 50%;
+    display: inline flow-root list-item;
+    list-style-type: none;
+}
+
+#formUpdate {
+    width: 100%;
+    display: inline flow-root list-item;
+    list-style-type: none;
+}
+
+.colDashboard {
+    width: 100%;
+    overflow: scroll;
+    height: 210px;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.blockArticle {
+    width: 50%;
+    height: 550px;
+    overflow: scroll;
+    /* border: thin solid gray; */
+    border-radius: 10px;
+    display: inline flow-root list-item;
+    text-align: left;
+}
+
+.formDelete {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 0.50rem;
+}
+
+.formUpdate {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 0.50rem;
+}
+
+.colBtnDelete {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btnDelete {
+    width: 50%;
+}
+
+.btnUpdate {
+    width: 50%;
+}
+
+.btnUpdate a {
+    color: white;
+}
+
+/* PAGES UPDATE ARTICLE */
+
+#titleUpdateArticle {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.image_product {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    /* border: 1px thin gray; */
+    box-sizing: border-box;
+    align-self: center;
+    margin-right: 3%;
+}
+
+#containerUpdateArticle {
+    display: flex;
+    justify-content: center;
+}
+
+#cardUpdateArticle {
+    text-align: center;
+    width: 30%;
+}
+
+#cardUpdateArticle img {
+    margin-top: 4%;
+    width: 60%;
+    height: 100%;
+    align-self: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* SELLER STATUS */
+
+.table .thead thead {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.colSellerStatus {
+    width: 100%;
+    overflow: scroll;
+    height: 310px;
+}
+
+#tableSellerWaiting {
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+#showDescriptionModal {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#descriptionModal {
+    overflow-wrap: anywhere;
+    font-size: 17px;
+    color: black;
+}
+
+/* ORDERSADMIN */
+
+#blockOrdersDashboard {
+    width: 100%;
+    overflow: scroll;
+    height: 200px;
+}
+
+/* INFO ORDER */
+
+#ordersInfoBlock {
+    margin-top: 4%;
+}
+
+#ordersInfoBlock h1 {
+    text-align: center;
+}
+
+#infoOrders {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    align-items: center;
+}

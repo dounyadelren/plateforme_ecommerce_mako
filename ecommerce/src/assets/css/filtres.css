@@ -1,0 +1,65 @@
+input {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.filtres {
+    margin-left: 25px;
+    padding-top: 30px;
+    /* color: white; */
+    width: 250px;
+    /* height: 100%; */
+    display: block;
+    position: sticky;
+    top: 136px;
+    float:left;
+    /* border-radius: 10px; */
+    /* border-right:#000000 2px solid; */
+}
+
+input[type="checkbox"].box {
+    display: none;
+}
+
+input[type="checkbox"].box + label::before {
+    content:'';
+    border: hsla(0, 0%, 0%, 0.26) solid 1px;
+    border-radius: 50%;
+    padding: 0 0.6rem;
+    margin-right: 0.3rem;
+}
+
+input[type="checkbox"]:checked.box +label::before {
+    background-color: #a2f7ca;
+}
+
+/* CORPS DU SLIDE */
+input[type="range"].note {
+    appearance: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+/* .note::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px;
+    cursor: pointer; 
+} */
+
+/* TRUC ROND QUI SLIDE */
+.note::-moz-range-thumb {
+    border: 1px solid rgba(0, 0, 0, 0.267) !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a2f7ca !important;
+    opacity: 100%;
+    cursor: pointer;
+    border: none;
+  } 

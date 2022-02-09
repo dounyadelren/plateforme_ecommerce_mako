@@ -1,0 +1,56 @@
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: "Barrio";
+    font-size: 45px;
+    color: black
+}
+
+.footer {
+    position:absolute !important;
+    /* bottom:0; */
+    /* padding-top: 100px; */
+    width:100%;
+    background: #A2F7CA;
+    padding-top: 5%;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.listFooter {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#listIcons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2 {
+    background-color: #35CE8D;
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    margin-top: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}

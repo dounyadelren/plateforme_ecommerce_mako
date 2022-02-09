@@ -1,0 +1,115 @@
+body {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0.25rem
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5%;
+}
+footer {
+    margin-top: 5%;
+}
+
+/* ARTICLE */
+
+.description {
+    width: 400px;
+    text-align: justify;
+}
+
+#green {
+    color: green;
+}
+
+#red {
+    color: red;
+}
+
+/* COMMENTAIRES */
+
+#textArea {
+    resize: none;
+    width: 700px;
+    height: 150px;
+}
+
+#errorSubmit {
+    color: #ff7851;
+}
+
+#submitValid {
+    color: #35CE8D;
+}
+
+#rowReviews {
+    margin-top: 3%;
+}
+
+.divReviews {
+    margin-bottom: -20%;
+    height: 700px;
+}
+
+.blockReviews {
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+}
+
+.cardReviews {
+    border: none;
+}
+
+#separator {
+    display: flex;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    width: 70%;
+}
+
+.etoiles {
+    color: rgb(226, 185, 82);
+}
+
+.tags {
+    display: inline-block;
+    
+}
+
+/* CAROUSSEL */
+
+.image-gallery {
+    width: 400px;
+    margin-right: 4%; 
+}
+
+.image-gallery-play-button {
+    display: none;
+}
+
+.image-gallery-right-nav {
+    display: none;
+}
+
+.image-gallery-left-nav {
+    display: none;
+}
+
+.image-gallery-fullscreen-button {
+    left: 0;
+}

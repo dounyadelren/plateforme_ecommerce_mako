@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* CONNEXION/INSCRIPTION */
+body {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 200px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.title h3 {
+    font-family: "Barrio";
+    font-size: 50px;
+}
+
+#logoTitle {
+    width: 100px;
+    height: 100px;
+}
+
+.formTitle {
+    text-align: center;
+    font-family: "Quicksand";
+}
+
+#coregError {
+    color: #ff3700;
+}
+
+/* CONNEXION */
+
+.containerFormLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.sectionFormLogin {
+    display: flex;
+    background-color: #A2F7CA;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand";
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.submitForm {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#submitLogin {
+    background-color: #35CE8D;
+    height: 50px;
+    align-self: center;
+}
+
+#submitLogin:hover {
+    background-color: #54d6a0;
+}
+
+#passwordLost {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#passwordLost:hover {
+    color: rgb(82, 82, 82);
+}
+
+#createAccount {
+    background-color: #EBD270;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+
+#createAccount:hover {
+    background-color: #f5e191;
+}
+
+#createAccount p {
+    margin-top: 2%;
+}
+
+/* INSCRIPTION */
+
+.containerFormRegister {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.sectionFormRegister {
+    display: flex;
+    background-color: #A2F7CA;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 45%;
+}
+
+#formRegister {
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand";
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#submitRegister {
+    background-color: #35CE8D;
+    height: 50px;
+    align-self: center;
+}
+
+#submitRegister:hover {
+    background-color: #54d6a0;
+}
+
+#connect {
+    background-color: #EBD270;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+
+/* INSCRIPTION PRO  */
+
+#pro {
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+
+#connect:hover {
+    background-color: #eeda89;
+}
+
+#pro:hover {
+    background-color: #87c9d6;
+}
+
+#connect p {
+    margin-top: 2%;
+}
+
+#pro p {
+    margin-top: 2%;
+}

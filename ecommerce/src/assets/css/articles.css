@@ -1,0 +1,44 @@
+/* ARTICLES PAGES */
+
+#articlesCards {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-right: 10px;
+}
+
+.image_product_mini {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border: 1px thin gray;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+#selectBlock {
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+
+.selectPrice {
+    width: 6%;
+    margin-top: 3.5%;
+}
+
+#noResult {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: white;
+}

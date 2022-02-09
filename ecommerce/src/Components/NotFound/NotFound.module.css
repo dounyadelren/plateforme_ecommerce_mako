@@ -1,0 +1,12 @@
+.divNotFound {
+    background-color: rgba(0, 0, 0, 0.515);
+    height: 820px;
+}
+
+.backHome {
+    color: rgb(189, 19, 19);
+}
+
+.backHome:hover {
+    color: rgb(223, 0, 0);
+}

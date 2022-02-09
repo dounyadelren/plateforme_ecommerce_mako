@@ -1,0 +1,111 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c . d"
+    "e e e";
+}
+.blockRecap {
+    display: flex;
+    justify-content:center;
+    grid-area: a;
+}
+
+.blockAdress {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-top: -100px;
+    grid-area: b;
+}
+.blockDelivery {
+    grid-area: c;
+    margin-left: 6rem;
+    width: 600px;
+    height: 200px;
+}
+.blockPaypal {
+    grid-area: d;
+    width: 600px;
+    height: 200px;
+}
+
+.blockRecap table {
+    margin-right: 100px;
+}
+
+.table {
+    width: 600px;
+    height: 400px;
+}
+
+.panier {
+    width: 250px;
+    height: 250px;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+#thRecap {
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+#totalCart {
+    border-top: 1px solid gray;
+    text-align: end;
+    width: 50%;
+}
+
+#recapArticle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.btnCommand {
+    display: flex;
+    justify-content: center;
+    grid-area: e;
+    margin-top: 3%;
+}
+
+#blockTotalCart {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.titleOrder {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#titlePaypal {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.step {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+
+#defaultAdress {
+    margin-bottom: 50px;
+}
+
+input {
+    border-bottom: 1px lightgrey solid;
+    padding: 3px;
+    margin: 5px;
+} 

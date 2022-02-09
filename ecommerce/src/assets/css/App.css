@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+p {
+    font-family: Helvetica, sans-serif
+}
+
+#schema {
+    width: 40%;
+    height: 35%;
+    margin-left: 20px;
+}
+
+.titre {
+    font-family: 'Barrio';
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+.presentation {
+    /* display: block; */
+    /* border: 1px solid black; */
+    text-align: justify;
+    width: 40%;
+    font-size: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding: 2%;
+}
+
+#carroussel {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.4%;
+}
+
+.flecheDroite, .flecheGauche{
+    color: grey;
+    font-size: 30px;
+}
+
+.flecheDroite {
+    margin-left: 200px;
+}
+
+.flecheGauche {
+    margin-right: 200px;
+}

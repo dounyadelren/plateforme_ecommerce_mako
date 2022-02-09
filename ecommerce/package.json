@@ -1,0 +1,56 @@
+{
+  "name": "ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.8",
+    "@paypal/react-paypal-js": "^7.6.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "cart-localstorage": "^1.1.5",
+    "dotenv": "^11.0.0",
+    "emailjs-com": "^3.2.0",
+    "html2canvas": "^1.4.1",
+    "jquery": "^3.6.0",
+    "jspdf": "^2.5.1",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.26.0",
+    "react-image-gallery": "^1.2.7",
+    "react-modal": "^3.14.4",
+    "react-responsive-carousel": "^3.2.22",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "scheduler-react": "^2.0.20",
+    "web-vitals": "^2.1.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

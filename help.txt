@@ -1,0 +1,10 @@
+git pull origin back
+
+copier le .env
+modifier les infos du .env
+
+composer install
+
+php bin/console doctrine:database:create
+
+php bin/console doctrine:migrations:migrate

@@ -1,0 +1,150 @@
+body {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5%;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+.titlePages {
+    text-align: center;
+    margin-top: 5%;
+    padding: 1rem;
+}
+
+.buttonStl {
+    font-size: 1.3rem;
+}
+
+
+.sub_menu button {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* CONTACT PAGES */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+#contact_title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#contactSection {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form {
+    width: 40%;
+    font-family: Quicksand, sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+.contentContact {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstRow {
+    width: 70%;
+}
+
+.secondRow {
+    margin-top: 100px;
+    width: 70%;
+}
+
+.threeRow {
+    margin-top: 100px;
+    width: 30%;
+}
+
+.colOne {
+    margin-right: 100px;
+}
+
+.colTwo {
+    margin-left: 100px;
+}
+
+.colThree {
+    margin-right: 100px;
+}
+
+.colFour {
+    margin-left: 100px;
+}
+
+.far {
+    cursor: pointer;
+}
+
+/* ACCOUNT PAGES */
+
+.liAccount {
+    display: flex;
+    align-items: center;
+}
+
+#errorSubmit {
+    color: #ff7851;
+}
+
+#passwordChange {
+    color: #35CE8D;
+}
+
+/* PASSWORD PAGES */
+
+.alerts {
+    color: #ff7851;
+}
+
+
+/* ORDERS PAGES */
+
+#orderSubMenu {
+    flex: 0.4;
+}
+
+#gridOrders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    margin-right: 20px;
+}
+
+#messageValidated {
+    color: #35CE8D;
+}
