@@ -1,4 +1,4 @@
-<h1 align="center">Mak'o - une solution de plateforme E-Commerce écologique</h1>
+<h1 align="center">Mak'o - une solution E-Commerce écologique</h1>
 <h2>Présentation du projet</h2>
 <p> Et si? Il y avait une plateforme alternative plus respectueuse de l'environnement que la grande plateforme <i>A****n</i> -vous la connaissez tous-
 dont le système de livraison serait plus écologique, descendant considérablement votre empreinte carbone ? Cette solution s'appelle <b>Mak'o</b>!</p>
