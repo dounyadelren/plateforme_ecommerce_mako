@@ -5,9 +5,9 @@ dont le système de livraison serait plus écologique, descendant considérablem
 <p>J'ai eu le plaisir d'implémenter ce projet en compagnie de:
 <ul>
   <li>Cédric </li>
-  <li>Corentin</li>
+  <li>Corentin <a href="http://github.com/CorentinNrd">son github</a></li>
   <li>Léandre</li>
-  <li>Elyess</li>
+  <li>Elyess <a href="https://www.linkedin.com/in/elyess-rjafellah-111124223">LinkedIn</a></li>
 </ul></p>
 
 <h2>Installation du projet</h2>
@@ -28,11 +28,13 @@ et "server" c'est à dire l'API Symfony (le côté serveur)</p>
 <p>L'entreprise peut ensuite commencer à soumettre ses produits et attendre qu'un administrateur les valide. Elle sera également informée par mail si il y a un refus. L'entreprise peut à tout moment modifier la fiche détaillée de chaque article (stock, promotion, composition, nom etc...), ou les supprimer.</p>
 <p>Si un de leur article est acheté l'entreprise sera informée par mail mais Mak'o se chargera de toute la partie packaging, expédition, livraison et suivi des commandes pour lesquels l'acheteur sera averti par mail systématiquement.</p>
 <p>Si jamais un des articles mis en vente passe en dessous de 15 items sur la totalité du stock, l'acheteur recevra un mail d'alerte lui indiquant de renflouer les stocks de ce produit en particulier.</p>
+<br>
 <h4>Les fonctionnalités de l'administrateur</h4>
-<p>A venir</p>
+<p>L'administrateur à partir du tableau de bord, a accès à la liste des vendeurs en attente de validation, la liste des articles en attente de validation, des commandes, de leur statut, il peut tout mettre à jour s'il le souhaite. L'admin peut également générer un fichier excel incluant toutes les infos concernant les utilisateurs et leurs habitudes d'achat (commandes, quantités etc...)</p>
+<br>
 <h4>Les fonctionnalités du client</h4>
-<p>A venir</p>
-
+<p>Le client visiteur sur Mak'o peut parcours le large choix du site, faire une recherche en filtrant et triant ses résultats, séléctionner des articles dans son panier, passer sa commande, choisir un tissu cadeau, choisir le lieu de livraison, etc... Le paiement se fait exclusivement par Paypal. Il peut aussi modifier ses informations personnelles telles que son mot de passe ou son adresse. Le client aura aussi accès au tableau de bord de ses commandes pour suivre leur statut et reste informé de toutes ses modifications par mail et peut télécharger sa facture à tout moment.</p>
+<br>
 <h3>Futures features</h3>
 <p>Nous aimerions pour l'avenir, implémenter une API pour qu'à chaque achat, le client puisse planter un arbre dans une zone victime de déforestation massive. Un nouveau pin de localisation viendrait s'ajouter à une map préexistante, disponible à tous les visiteurs du site. Seul le client inscrit aurait accès à ses pins personnels, avec possibilité de les partager sur les réseaux sociaux.</p>
 <p>Sinon, d'un point de vue strictement informatique, nous aimerions implémenter un système d'achat en tant qu'invité sur le site, sans obligation de s'inscrire (ce qui n'est actuellement pas le cas)</p>
